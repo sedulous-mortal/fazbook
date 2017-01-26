@@ -1,33 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>
         <%= title %>
     </title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
 <body>
-    <h1> Create a new user</h1>
-    <form action="/users" method="POST"></form>
-    <label>
-        Email
-        <input name="email" />
-    </label>
-    <label>
-        First Name
-        <input name="firstName" />
-    </label>
-    <label>
-        Last Name
-        <input name="lastName" />
-    </label>
-    <label>
-        Date of Birth
-        <input type="date" name="dob" />
-    </label>
-    <input type="submit" value="Save new user details">
+    <form action='/users' method='POST'>
+        <label>Email</label>
+        <input type='text' name='email' />
+        <label>First Name</label>
+        <input type="text" name='firstName' />
+        <label>Last Name</label>
+        <input type="text" name='lastName' />
+        <label>Date of Birth</label>
+        <input type="date" name='dob' />
+        <button type='submit'>LETS GO</button>
+    </form>
 </body>
 
 </html>
