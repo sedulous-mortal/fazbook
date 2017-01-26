@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Welcome to fazbook</h1>
-  </body>
+    <a href='/users/new'>Create a user</a>
+    <% users.forEach(function(user){ %>
+        <div>
+            <span>
+            <%= user.email %>
+            </span>
+            <span>
+            <%= user.firstName %>
+            </span>
+            <span>
+            <%= user.lastName %>
+            </span>
+            <span>
+            <%= user.dob %>
+            </span>
+        </div>
+        <% })%>
+</body>
+
 </html>
